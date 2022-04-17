@@ -1,0 +1,160 @@
+.about-companies{
+  max-width:800px;
+  width: 90%;
+  background-color: #f1f1f1;
+  padding: 1rem .5rem;
+  margin: 1rem auto;
+}
+section{
+  background: url("../images/maxresdefault.jpg") no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.about-companies h2{
+  font-size: 2rem;
+  color: #444;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+nav ul li a:hover{
+  color: #000;
+  background-color: steelblue;
+}
+
+.about-companies h2 span{
+  color: darkblue;
+}
+.about-companies .company-logos{
+  display: flex;
+  justify-content: space-evenly;
+  color:#4162cf;
+  font-size: 2rem;
+  transition: .3s ease-in;
+  max-width: 75%;
+  margin: 0pc auto;
+}
+
+.about-companies .company-logos .fa:hover{
+  color: black;
+
+}
+
+@media screen and (max-width:600px) {
+  .about-companies h1{
+      font-size: 1.1rem;
+  }   
+  .about-companies .company-logos{
+      font-size: 1rem;
+  } 
+}
+
+.about-section h2{
+  font-size: 3rem;
+  text-align: center;
+}
+
+.about-sub{
+  display: flex; 
+  max-width: 800px;
+  margin: 1rem auto;
+}
+
+.about-sub .sub-sub-about{
+  padding:1rem;
+  animation: animatetext .5s linear;
+}
+@keyframes animatetext{
+  from{
+      transform: translate(-15px);
+      opacity: 0.5;
+  }
+  to{
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+
+.about-sub > img{
+  max-height: 250px;
+  max-width: 90%;
+  width: 300px;
+  padding: 0.5rem;
+  animation: animateimage 1s linear;
+  margin: 1rem auto;
+}
+
+.about-section video{
+  max-height: 300px;
+  max-width: 90%;
+  width: 300px;
+  padding: 0.5rem;
+  animation: animateimage 1s linear;
+  margin: 1rem auto;
+}
+
+@keyframes animateimage{
+  from{
+      transform: translate(-15px);
+      opacity: 0.5;
+  }
+  to{
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@media screen and (maxwidth:600px) {
+  .about-sub{
+      flex-direction: column;
+  }
+  .about-sub:last-child{
+      flex-direction: column-reverse;
+  }
+}
+
+.main-content{
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.main-content h1{
+  font-size: 3rem;
+}
+
+.main-content p{
+  /* color: #000; */
+  font-weight:bolder;
+}
+
+.gradient-btn{
+  background-color: rgb(14, 2, 83);
+  padding:0.7rem 1rem;
+  color:#fff;
+  border:none;
+  border-radius: 10px;
+  width: 200px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  background-image: linear-gradient(to right #4162cf 0%,#0072ff 51%,#4162cf 100%);
+  border-radius: 10px;
+  background-size: 100% auto;
+  transition: .3s ease-in-out;
+  margin-top: 1.5rem;
+}
+.gradient-btn:hover{
+  background-position: right center;
+  background-color: steelblue;
+}
+
+.text{
+  color: #000;
+  font-weight: 700;
+}
